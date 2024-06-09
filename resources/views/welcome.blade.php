@@ -14,13 +14,17 @@
         <input type="text" name="username" id="">
         <button type="submit">Submit</button>
     </form>
-    <form action="/" method="post">
+    <form action="/1" method="post">
         @csrf
-        <input type="hidden" name="_method" value="put">
+        @method('PUT')
         <input type="text" name="username" id="">
         <button type="submit">Submit put</button>
     </form>
-
+    <form action="/1" method="post">
+        @csrf
+        @method('DELETE')
+        <button type="submit">Delete</button>
+    </form>
 </body>
 
 </html>
