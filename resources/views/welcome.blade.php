@@ -11,9 +11,16 @@
     <h1>Hello World</h1>
     <form action="/" method="post">
         @csrf
-        <input type="text" name="name" id="">
+        <input type="text" name="username" id="">
         <button type="submit">Submit</button>
     </form>
+    <form action="/" method="post">
+        @csrf
+        <input type="hidden" name="_method" value="put">
+        <input type="text" name="username" id="">
+        <button type="submit">Submit put</button>
+    </form>
+
 </body>
 
 </html>
