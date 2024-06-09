@@ -19,6 +19,10 @@ Route::delete('/{id}', function ($id) {
     return $id;
 });
 
+Route::get("/hello", function () {
+    return response('<h1>Hello there</h1>', 200);
+});
+
 Route::get('/test', function () {
     $test = "Test again";
     return "<h1>" . $test . "</h1>";
