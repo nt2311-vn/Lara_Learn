@@ -11,6 +11,11 @@ Route::post('/', function (Request $request) {
     dd($request->all());
 });
 
+Route::put('/', function (Request $request) {
+    dd($request->all());
+});
+
+
 
 Route::get('/test', function () {
     $test = "Test again";
